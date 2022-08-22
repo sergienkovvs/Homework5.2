@@ -1,29 +1,21 @@
-def get_input_data():
-    return int(input("enter integer number "))
-
-def make_tasks_with_wile(input_data):
-
-    null = 0
+def out_numbers(n):
     summa = 0
-
-    while null <= input_data:
-        null = null+1
-        if not null %3 == 0:
-            summa = summa+null*null*null
+    for numbers in range(1,n+1):
+        summa += numbers * numbers * numbers
     print(summa)
 
 
-def make_tasks_with_for(input_data):
+def metod_name():
+    return int(input("Write number: "))
 
+
+def out_numbers2(n):
     null = 0
     summa = 0
+    while n > null:
+        null += 1
+        summa += null * null * null
+    print(summa)
 
-    for null in range(0, input_data):
-        summa = summa+null*null*null
-        print(summa)
-
-
-out_number = get_input_data()
-make_tasks_with_wile(out_number)
-
-make_tasks_with_for(out_number)
+out_numbers(metod_name())
+out_numbers2(metod_name())
